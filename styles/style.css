@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #222;
+  color: red;
 }
 
 nav {
@@ -68,13 +68,13 @@ button#main {
 }
 
 button:hover {
-  background-color: #444;
+  background-color: blueviolet;
 }
 
 button {
-  background-color: #222;
+  background-color: purple;
   border: none;
-  color: #fff;
+  color: black;
   padding: 0.2rem 1rem;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -87,7 +87,9 @@ button {
 h1,
 h2,
 h3 {
-  color: #000;
+  color: blue;
+  font-family: cursive;
+  background-color: aquamarine;
 }
 
 p {
