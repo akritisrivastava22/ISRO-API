@@ -1,18 +1,18 @@
 let satelliteData = null;
 
-// Get DOM elements
+
 const countrySelect = document.getElementById("country-select");
 const searchButton = document.getElementById("search-button");
 const satelliteList = document.getElementById("satellite-list");
 
-// iffie to fetch data from API
+
 (async () => {
 	const response = await fetch(
 		"https://isro.vercel.app/api/customer_satellites"
 	);
 	satelliteData = await response.json();
 
-	// Get unique countries from the data
+	
 	const countries = [
 		...new Set(
 			satelliteData.customer_satellites.map((satellite) =>
@@ -21,7 +21,7 @@ const satelliteList = document.getElementById("satellite-list");
 		),
 	];
 
-	// Create options for each country
+	
 	countries.forEach((country) => {
 		const option = document.createElement("option");
 		option.value = country;
@@ -32,7 +32,7 @@ const satelliteList = document.getElementById("satellite-list");
 	displaySatellites(satelliteData.customer_satellites);
 })();
 
-// Function to filter centers from all centers based on selected country
+
 async function getSatellites(country) {
 	const centers = satelliteData.customer_satellites.filter((satellite) => {
 		return satellite.country.toLowerCase() === country.toLowerCase();
@@ -41,7 +41,7 @@ async function getSatellites(country) {
 	return centers;
 }
 
-// Function to display centers on the page
+
 function displaySatellites(satellites) {
 	let output = "";
 	satellites.forEach((satellite) => {

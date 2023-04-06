@@ -7,12 +7,12 @@ let launcherData = null;
 })();
 
 function displayLaunchers(list) {
-	const launchersList = document.getElementById("launchers-list");
-	launchersList.innerHTML = "";
+	const launch = document.getElementById("launchers-list");
+	launch.innerHTML = "";
 
 	let output = "";
 	list.forEach((launcher) => {
 		output += `<li>${launcher.id}</li>`;
 	});
-	launchersList.innerHTML = output;
+	launch.innerHTML = output;
 }
