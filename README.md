@@ -12,8 +12,8 @@ Every page reflects data from the from a specific API.
 
 ## How the website looks like
 
-![desktop](./home.png)
-![desktop](./satellites.png)
-![desktop](./centers.png)
-![desktop](./launchers.png)
+![image](./home.png)
+![image](./satellites.png)
+![image](./centers.png)
+![image](./launchers.png)
 
