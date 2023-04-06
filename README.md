@@ -13,7 +13,7 @@ Every page reflects data from the from a specific API.
 ## How the website looks like
 
 ![image](./home.png)
-![image](./satellites.png)
 ![image](./centers.png)
 ![image](./launchers.png)
+![image](./satellites.png)
 
